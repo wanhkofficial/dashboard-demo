@@ -73,7 +73,7 @@ export function CompareView() {
   return (
     <div className="space-y-10">
       <div className="rounded-2xl border border-slate-800/80 bg-slate-950/50 px-4 py-4 text-sm text-slate-400">
-        <p className="font-medium text-slate-200">Side-by-side on shared chart types</p>
+        <p className="font-medium text-slate-200">Quick compare - overlapping chart types</p>
         <p className="mt-1 text-xs leading-relaxed">
           Each column keeps its fingerprint banner and visual language so Canvas (ECharts), SVG
           (Recharts), and Tremor UI stay obviously different — same mock data, different chrome.

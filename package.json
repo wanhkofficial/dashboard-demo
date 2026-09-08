@@ -6,12 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fetch:echarts": "node scripts/fetch-echarts-examples.mjs"
   },
   "dependencies": {
     "@tremor/react": "^3.18.7",
     "echarts": "^5.6.0",
     "echarts-for-react": "^3.0.2",
+    "echarts-stat": "^1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.15.1"

@@ -1,0 +1,2942 @@
+{
+  "source": "https://echarts.apache.org/examples/examples/js/",
+  "fetchedAt": "2026-09-07T07:16:24.435500+00:00",
+  "count": 297,
+  "examples": [
+    {
+      "id": "area-basic",
+      "file": "area-basic.js",
+      "category": "line",
+      "title": "Basic area chart",
+      "bytes": 374,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "area-pieces",
+      "file": "area-pieces.js",
+      "category": "line",
+      "title": "Area Pieces",
+      "bytes": 1150,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "area-rainfall",
+      "file": "area-rainfall.js",
+      "category": "line",
+      "title": "Rainfall",
+      "bytes": 91726,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "area-simple",
+      "file": "area-simple.js",
+      "category": "line",
+      "title": "Large scale area chart",
+      "bytes": 1503,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "area-stack-gradient",
+      "file": "area-stack-gradient.js",
+      "category": "line",
+      "title": "Gradient Stacked Area Chart",
+      "bytes": 3604,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "area-stack",
+      "file": "area-stack.js",
+      "category": "line",
+      "title": "Stacked Area Chart",
+      "bytes": 1711,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "area-time-axis",
+      "file": "area-time-axis.js",
+      "category": "line",
+      "title": "Area Chart with Time Axis",
+      "bytes": 1073,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-animation-delay",
+      "file": "bar-animation-delay.js",
+      "category": "bar",
+      "title": "Animation Delay",
+      "bytes": 1221,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-background",
+      "file": "bar-background.js",
+      "category": "bar",
+      "title": "Bar with Background",
+      "bytes": 438,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-breaks-brush",
+      "file": "bar-breaks-brush.js",
+      "category": "bar",
+      "title": "Bar Chart with Axis Breaks (Brush-enabled)",
+      "bytes": 5760,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-breaks-simple",
+      "file": "bar-breaks-simple.js",
+      "category": "bar",
+      "title": "Bar Chart with Axis Breaks",
+      "bytes": 3477,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-brush",
+      "file": "bar-brush.js",
+      "category": "bar",
+      "title": "Brush Select on Column Chart",
+      "bytes": 2120,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-data-color",
+      "file": "bar-data-color.js",
+      "category": "bar",
+      "title": "Set Style of Single Bar.",
+      "bytes": 500,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-drilldown",
+      "file": "bar-drilldown.js",
+      "category": "bar",
+      "title": "Bar Chart Drilldown Animation",
+      "bytes": 1889,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-gradient",
+      "file": "bar-gradient.js",
+      "category": "bar",
+      "title": "Clickable Column Chart with Gradient",
+      "bytes": 2072,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-histogram",
+      "file": "bar-histogram.js",
+      "category": "custom",
+      "title": "Histogram with Custom Series",
+      "bytes": 2548,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "bar-label-rotation",
+      "file": "bar-label-rotation.js",
+      "category": "bar",
+      "title": "Bar Label Rotation",
+      "bytes": 3045,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-large",
+      "file": "bar-large.js",
+      "category": "bar",
+      "title": "Large Scale Bar Chart",
+      "bytes": 1654,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-multi-drilldown",
+      "file": "bar-multi-drilldown.js",
+      "category": "bar",
+      "title": "Bar Chart Multi-level Drilldown Animation",
+      "bytes": 3985,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-negative",
+      "file": "bar-negative.js",
+      "category": "bar",
+      "title": "Bar Chart with Negative Value",
+      "bytes": 1174,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-negative2",
+      "file": "bar-negative2.js",
+      "category": "bar",
+      "title": "Bar Chart with Negative Value",
+      "bytes": 1268,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-polar-label-radial",
+      "file": "bar-polar-label-radial.js",
+      "category": "bar",
+      "title": "Radial Polar Bar Label Position",
+      "bytes": 589,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-polar-label-tangential",
+      "file": "bar-polar-label-tangential.js",
+      "category": "bar",
+      "title": "Tangential Polar Bar Label Position",
+      "bytes": 577,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-polar-real-estate",
+      "file": "bar-polar-real-estate.js",
+      "category": "bar",
+      "title": "Bar Chart on Polar",
+      "bytes": 2378,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-polar-stack-radial",
+      "file": "bar-polar-stack-radial.js",
+      "category": "bar",
+      "title": "Stacked Bar Chart on Polar(Radial)",
+      "bytes": 895,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-polar-stack",
+      "file": "bar-polar-stack.js",
+      "category": "bar",
+      "title": "Stacked Bar Chart on Polar",
+      "bytes": 850,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-race-country",
+      "file": "bar-race-country.js",
+      "category": "bar",
+      "title": "Bar Race",
+      "bytes": 3553,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "bar-race",
+      "file": "bar-race.js",
+      "category": "bar",
+      "title": "Bar Race",
+      "bytes": 1229,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-rich-text",
+      "file": "bar-rich-text.js",
+      "category": "bar",
+      "title": "Weather Statistics",
+      "bytes": 3182,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "bar-simple",
+      "file": "bar-simple.js",
+      "category": "bar",
+      "title": "Basic Bar",
+      "bytes": 315,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-stack-borderRadius",
+      "file": "bar-stack-borderRadius.js",
+      "category": "bar",
+      "title": "Stacked Bar with borderRadius",
+      "bytes": 1800,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-stack-normalization-and-variation",
+      "file": "bar-stack-normalization-and-variation.js",
+      "category": "bar",
+      "title": "Stacked Bar Normalization and Variation",
+      "bytes": 2525,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-stack-normalization",
+      "file": "bar-stack-normalization.js",
+      "category": "bar",
+      "title": "Stacked Bar Normalization",
+      "bytes": 1159,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-stack",
+      "file": "bar-stack.js",
+      "category": "bar",
+      "title": "Stacked Column Chart",
+      "bytes": 2093,
+      "needs": [
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "bar-tick-align",
+      "file": "bar-tick-align.js",
+      "category": "bar",
+      "title": "Axis Align with Tick",
+      "bytes": 646,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-waterfall",
+      "file": "bar-waterfall.js",
+      "category": "bar",
+      "title": "Waterfall Chart",
+      "bytes": 1246,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-waterfall2",
+      "file": "bar-waterfall2.js",
+      "category": "bar",
+      "title": "Waterfall Chart",
+      "bytes": 1717,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-y-category-stack",
+      "file": "bar-y-category-stack.js",
+      "category": "bar",
+      "title": "Stacked Horizontal Bar",
+      "bytes": 1549,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar-y-category",
+      "file": "bar-y-category.js",
+      "category": "bar",
+      "title": "World Population",
+      "bytes": 659,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bar1",
+      "file": "bar1.js",
+      "category": "bar",
+      "title": "Rainfall and Evaporation",
+      "bytes": 1545,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "boxplot-light-velocity",
+      "file": "boxplot-light-velocity.js",
+      "category": "boxplot",
+      "title": "Boxplot Light Velocity",
+      "bytes": 1911,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "boxplot-light-velocity2",
+      "file": "boxplot-light-velocity2.js",
+      "category": "boxplot",
+      "title": "Boxplot Light Velocity2",
+      "bytes": 1972,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "boxplot-multi",
+      "file": "boxplot-multi.js",
+      "category": "boxplot",
+      "title": "Multiple Categories",
+      "bytes": 1773,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bubble-gradient",
+      "file": "bubble-gradient.js",
+      "category": "scatter",
+      "title": "Bubble Chart",
+      "bytes": 3998,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "bump-chart",
+      "file": "bump-chart.js",
+      "category": "line",
+      "title": "Bump Chart (Ranking)",
+      "bytes": 2107,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-charts",
+      "file": "calendar-charts.js",
+      "category": "calendar",
+      "title": "Calendar Charts",
+      "bytes": 3279,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-effectscatter",
+      "file": "calendar-effectscatter.js",
+      "category": "calendar",
+      "title": "Calendar EffectScatter",
+      "bytes": 3505,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-graph",
+      "file": "calendar-graph.js",
+      "category": "calendar",
+      "title": "Calendar Graph",
+      "bytes": 1978,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-heatmap",
+      "file": "calendar-heatmap.js",
+      "category": "calendar",
+      "title": "Calendar Heatmap",
+      "bytes": 1023,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-horizontal",
+      "file": "calendar-horizontal.js",
+      "category": "calendar",
+      "title": "Calendar Heatmap Horizontal",
+      "bytes": 1355,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-lunar",
+      "file": "calendar-lunar.js",
+      "category": "calendar",
+      "title": "Calendar Lunar",
+      "bytes": 12025,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-pie",
+      "file": "calendar-pie.js",
+      "category": "calendar",
+      "title": "Calendar Pie",
+      "bytes": 1980,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-simple",
+      "file": "calendar-simple.js",
+      "category": "calendar",
+      "title": "Simple Calendar",
+      "bytes": 699,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "calendar-vertical",
+      "file": "calendar-vertical.js",
+      "category": "calendar",
+      "title": "Calendar Heatmap Vertical",
+      "bytes": 1586,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "candlestick-brush",
+      "file": "candlestick-brush.js",
+      "category": "candlestick",
+      "title": "Candlestick Brush",
+      "bytes": 5449,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "candlestick-large",
+      "file": "candlestick-large.js",
+      "category": "candlestick",
+      "title": "Large Scale Candlestick",
+      "bytes": 4030,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "candlestick-sh-2015",
+      "file": "candlestick-sh-2015.js",
+      "category": "candlestick",
+      "title": "'ShangHai Index, 2015'",
+      "bytes": 28957,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "candlestick-sh",
+      "file": "candlestick-sh.js",
+      "category": "candlestick",
+      "title": "ShangHai Index",
+      "bytes": 9060,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "candlestick-simple",
+      "file": "candlestick-simple.js",
+      "category": "candlestick",
+      "title": "Basic Candlestick",
+      "bytes": 381,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "candlestick-touch",
+      "file": "candlestick-touch.js",
+      "category": "candlestick",
+      "title": "Axis Pointer Link and Touch",
+      "bytes": 16510,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "chord-lineStyle-color",
+      "file": "chord-lineStyle-color.js",
+      "category": "chord",
+      "title": "Chord lineStyle.color",
+      "bytes": 1192,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "chord-minAngle",
+      "file": "chord-minAngle.js",
+      "category": "chord",
+      "title": "Chord minAngle",
+      "bytes": 568,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "chord-simple",
+      "file": "chord-simple.js",
+      "category": "chord",
+      "title": "Basic Chord",
+      "bytes": 519,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "chord-style",
+      "file": "chord-style.js",
+      "category": "chord",
+      "title": "Chord Style",
+      "bytes": 1576,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "circle-packing-with-d3",
+      "file": "circle-packing-with-d3.js",
+      "category": "custom",
+      "title": "Circle Packing with d3",
+      "bytes": 4714,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "confidence-band",
+      "file": "confidence-band.js",
+      "category": "line",
+      "title": "Confidence Band",
+      "bytes": 2833,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "custom-bar-trend",
+      "file": "custom-bar-trend.js",
+      "category": "custom",
+      "title": "Custom Bar Trend",
+      "bytes": 2594,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-calendar-icon",
+      "file": "custom-calendar-icon.js",
+      "category": "custom",
+      "title": "Custom Calendar Icon",
+      "bytes": 9726,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-cartesian-polygon",
+      "file": "custom-cartesian-polygon.js",
+      "category": "custom",
+      "title": "Custom Cartesian Polygon",
+      "bytes": 1227,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-error-bar",
+      "file": "custom-error-bar.js",
+      "category": "custom",
+      "title": "Error Bar on Catesian",
+      "bytes": 2650,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-error-scatter",
+      "file": "custom-error-scatter.js",
+      "category": "custom",
+      "title": "Error Scatter on Catesian",
+      "bytes": 4543,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-gantt-flight",
+      "file": "custom-gantt-flight.js",
+      "category": "custom",
+      "title": "Gantt Chart of Airport Flights",
+      "bytes": 15546,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "custom-gauge",
+      "file": "custom-gauge.js",
+      "category": "custom",
+      "title": "Custom Gauge",
+      "bytes": 4368,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "custom-hexbin",
+      "file": "custom-hexbin.js",
+      "category": "custom",
+      "title": "Hexagonal Binning",
+      "bytes": 5884,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "custom-ohlc",
+      "file": "custom-ohlc.js",
+      "category": "candlestick",
+      "title": "OHLC Chart",
+      "bytes": 3525,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "custom-polar-heatmap",
+      "file": "custom-polar-heatmap.js",
+      "category": "custom",
+      "title": "Polar Heatmap",
+      "bytes": 3749,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-profile",
+      "file": "custom-profile.js",
+      "category": "custom",
+      "title": "Profile",
+      "bytes": 2534,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-profit",
+      "file": "custom-profit.js",
+      "category": "custom",
+      "title": "Profit",
+      "bytes": 1311,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-spiral-race",
+      "file": "custom-spiral-race.js",
+      "category": "custom",
+      "title": "Custom Spiral Race",
+      "bytes": 7502,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "custom-wind",
+      "file": "custom-wind.js",
+      "category": "custom",
+      "title": "Use custom series to draw wind vectors",
+      "bytes": 3135,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "cycle-plot",
+      "file": "cycle-plot.js",
+      "category": "custom",
+      "title": "Cycle Plot",
+      "bytes": 3378,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "data-transform-aggregate",
+      "file": "data-transform-aggregate.js",
+      "category": "boxplot",
+      "title": "Data Transform Simple Aggregate",
+      "bytes": 3086,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "data-transform-filter",
+      "file": "data-transform-filter.js",
+      "category": "line",
+      "title": "Data Transform Filter",
+      "bytes": 1762,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "data-transform-multiple-pie",
+      "file": "data-transform-multiple-pie.js",
+      "category": "dataset",
+      "title": "Partition Data to Pies",
+      "bytes": 2041,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "data-transform-sort-bar",
+      "file": "data-transform-sort-bar.js",
+      "category": "dataset",
+      "title": "Sort Data in Bar Chart",
+      "bytes": 1081,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dataset-default",
+      "file": "dataset-default.js",
+      "category": "dataset",
+      "title": "Default arrangement",
+      "bytes": 1114,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dataset-encode0",
+      "file": "dataset-encode0.js",
+      "category": "dataset",
+      "title": "Simple Encode",
+      "bytes": 1074,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dataset-encode1",
+      "file": "dataset-encode1.js",
+      "category": "dataset",
+      "title": "Encode and Matrix",
+      "bytes": 2842,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "dataset-link",
+      "file": "dataset-link.js",
+      "category": "dataset",
+      "title": "Share Dataset",
+      "bytes": 2043,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dataset-series-layout-by",
+      "file": "dataset-series-layout-by.js",
+      "category": "dataset",
+      "title": "Series Layout By Column or Row",
+      "bytes": 1016,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dataset-simple0",
+      "file": "dataset-simple0.js",
+      "category": "dataset",
+      "title": "Simple Example of Dataset",
+      "bytes": 617,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dataset-simple1",
+      "file": "dataset-simple1.js",
+      "category": "dataset",
+      "title": "Dataset in Object Array",
+      "bytes": 734,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dynamic-data",
+      "file": "dynamic-data.js",
+      "category": "bar",
+      "title": "Dynamic Data",
+      "bytes": 2433,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "dynamic-data2",
+      "file": "dynamic-data2.js",
+      "category": "line",
+      "title": "Dynamic Data + Time Axis",
+      "bytes": 1478,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "effectScatter-bmap",
+      "file": "effectScatter-bmap.js",
+      "category": "scatter",
+      "title": "Air Quality - Baidu Map",
+      "bytes": 16050,
+      "needs": [
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "effectScatter-map",
+      "file": "effectScatter-map.js",
+      "category": "scatter",
+      "title": "Air Quality",
+      "bytes": 13995,
+      "needs": [
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "flame-graph",
+      "file": "flame-graph.js",
+      "category": "custom",
+      "title": "Flame graph",
+      "bytes": 4462,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "funnel-align",
+      "file": "funnel-align.js",
+      "category": "funnel",
+      "title": "Funnel Compare",
+      "bytes": 2145,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "funnel-customize",
+      "file": "funnel-customize.js",
+      "category": "funnel",
+      "title": "Customized Funnel",
+      "bytes": 1726,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "funnel-mutiple",
+      "file": "funnel-mutiple.js",
+      "category": "funnel",
+      "title": "Multiple Funnels",
+      "bytes": 2060,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "funnel",
+      "file": "funnel.js",
+      "category": "funnel",
+      "title": "Funnel Chart",
+      "bytes": 1200,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-barometer",
+      "file": "gauge-barometer.js",
+      "category": "gauge",
+      "title": "Gauge Barometer chart",
+      "bytes": 2714,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-car",
+      "file": "gauge-car.js",
+      "category": "gauge",
+      "title": "Gauge Car",
+      "bytes": 13641,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-clock",
+      "file": "gauge-clock.js",
+      "category": "gauge",
+      "title": "Clock",
+      "bytes": 6507,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-grade",
+      "file": "gauge-grade.js",
+      "category": "gauge",
+      "title": "Grade Gauge",
+      "bytes": 1879,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-multi-title",
+      "file": "gauge-multi-title.js",
+      "category": "gauge",
+      "title": "Multi Title Gauge",
+      "bytes": 1733,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-progress",
+      "file": "gauge-progress.js",
+      "category": "gauge",
+      "title": "Progress Gauge",
+      "bytes": 929,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-ring",
+      "file": "gauge-ring.js",
+      "category": "gauge",
+      "title": "Ring Gauge",
+      "bytes": 1953,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-simple",
+      "file": "gauge-simple.js",
+      "category": "gauge",
+      "title": "Simple Gauge",
+      "bytes": 493,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-speed",
+      "file": "gauge-speed.js",
+      "category": "gauge",
+      "title": "Speed Gauge",
+      "bytes": 2329,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-stage",
+      "file": "gauge-stage.js",
+      "category": "gauge",
+      "title": "Stage Speed Gauge",
+      "bytes": 1200,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge-temperature",
+      "file": "gauge-temperature.js",
+      "category": "gauge",
+      "title": "Temperature Gauge chart",
+      "bytes": 2285,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "gauge",
+      "file": "gauge.js",
+      "category": "gauge",
+      "title": "Gauge Basic chart",
+      "bytes": 369,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "geo-beef-cuts",
+      "file": "geo-beef-cuts.js",
+      "category": "map",
+      "title": "GEO Beef Cuts",
+      "bytes": 2212,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-choropleth-scatter",
+      "file": "geo-choropleth-scatter.js",
+      "category": "map",
+      "title": "Geo Choropleth and Scatter",
+      "bytes": 2711,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-graph",
+      "file": "geo-graph.js",
+      "category": "map",
+      "title": "Geo Graph",
+      "bytes": 2588,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-lines",
+      "file": "geo-lines.js",
+      "category": "map",
+      "title": "Migration",
+      "bytes": 8438,
+      "needs": [
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-map-scatter",
+      "file": "geo-map-scatter.js",
+      "category": "map",
+      "title": "map and scatter share a geo",
+      "bytes": 9912,
+      "needs": [
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-organ",
+      "file": "geo-organ.js",
+      "category": "map",
+      "title": "Organ Data with SVG",
+      "bytes": 1801,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-seatmap-flight",
+      "file": "geo-seatmap-flight.js",
+      "category": "map",
+      "title": "Flight Seatmap with SVG",
+      "bytes": 1936,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-svg-custom-effect",
+      "file": "geo-svg-custom-effect.js",
+      "category": "custom",
+      "title": "GEO SVG with Customized Effect",
+      "bytes": 3136,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-svg-lines",
+      "file": "geo-svg-lines.js",
+      "category": "map",
+      "title": "GEO SVG Lines",
+      "bytes": 2957,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-svg-map",
+      "file": "geo-svg-map.js",
+      "category": "map",
+      "title": "GEO SVG Map",
+      "bytes": 5355,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-svg-scatter-simple",
+      "file": "geo-svg-scatter-simple.js",
+      "category": "map",
+      "title": "GEO SVG Scatter",
+      "bytes": 1203,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "geo-svg-traffic",
+      "file": "geo-svg-traffic.js",
+      "category": "map",
+      "title": "GEO SVG Traffic",
+      "bytes": 6741,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "graph-circular-layout",
+      "file": "graph-circular-layout.js",
+      "category": "graph",
+      "title": "Les Miserables",
+      "bytes": 1210,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graph-force-dynamic",
+      "file": "graph-force-dynamic.js",
+      "category": "graph",
+      "title": "Graph Dynamic",
+      "bytes": 1048,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "graph-force",
+      "file": "graph-force.js",
+      "category": "graph",
+      "title": "Force Layout",
+      "bytes": 964,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graph-force2",
+      "file": "graph-force2.js",
+      "category": "graph",
+      "title": "Force Layout",
+      "bytes": 1104,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "graph-grid",
+      "file": "graph-grid.js",
+      "category": "graph",
+      "title": "Graph on Cartesian",
+      "bytes": 923,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "graph-label-overlap",
+      "file": "graph-label-overlap.js",
+      "category": "graph",
+      "title": "Hide Overlapped Label",
+      "bytes": 977,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graph-life-expectancy",
+      "file": "graph-life-expectancy.js",
+      "category": "graph",
+      "title": "Graph Life Expectancy",
+      "bytes": 1911,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graph-npm",
+      "file": "graph-npm.js",
+      "category": "graph",
+      "title": "NPM Dependencies",
+      "bytes": 1726,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graph-simple",
+      "file": "graph-simple.js",
+      "category": "graph",
+      "title": "Simple Graph",
+      "bytes": 1712,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "graph-webkit-dep",
+      "file": "graph-webkit-dep.js",
+      "category": "graph",
+      "title": "Graph Webkit Dep",
+      "bytes": 1227,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graph",
+      "file": "graph.js",
+      "category": "graph",
+      "title": "Les Miserables",
+      "bytes": 1296,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "graphic-loading",
+      "file": "graphic-loading.js",
+      "category": "graphic",
+      "title": "Customized Loading Animation",
+      "bytes": 983,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "graphic-stroke-animation",
+      "file": "graphic-stroke-animation.js",
+      "category": "graphic",
+      "title": "Stroke Animation",
+      "bytes": 1135,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "graphic-wave-animation",
+      "file": "graphic-wave-animation.js",
+      "category": "graphic",
+      "title": "Wave Animation",
+      "bytes": 5895,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "grid-multiple",
+      "file": "grid-multiple.js",
+      "category": "line",
+      "title": "Rainfall vs Evaporation",
+      "bytes": 91540,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "heatmap-bmap",
+      "file": "heatmap-bmap.js",
+      "category": "heatmap",
+      "title": "Heatmap on Baidu Map Extension",
+      "bytes": 1138,
+      "needs": [
+        "remote-data",
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "heatmap-cartesian",
+      "file": "heatmap-cartesian.js",
+      "category": "heatmap",
+      "title": "Heatmap on Cartesian",
+      "bytes": 3188,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "heatmap-large-piecewise",
+      "file": "heatmap-large-piecewise.js",
+      "category": "heatmap",
+      "title": "Heatmap - Discrete Mapping of Color",
+      "bytes": 5375,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "heatmap-large",
+      "file": "heatmap-large.js",
+      "category": "heatmap",
+      "title": "Heatmap - 20K data",
+      "bytes": 5221,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "heatmap-map",
+      "file": "heatmap-map.js",
+      "category": "heatmap",
+      "title": "Air Qulity",
+      "bytes": 14021,
+      "needs": [
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "intraday-breaks-1",
+      "file": "intraday-breaks-1.js",
+      "category": "candlestick",
+      "title": "Intraday Chart with Breaks",
+      "bytes": 3262,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "intraday-breaks-2",
+      "file": "intraday-breaks-2.js",
+      "category": "candlestick",
+      "title": "Intraday Chart with Breaks (II)",
+      "bytes": 2660,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-aqi",
+      "file": "line-aqi.js",
+      "category": "line",
+      "title": "Beijing AQI",
+      "bytes": 2127,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "line-draggable",
+      "file": "line-draggable.js",
+      "category": "line",
+      "title": "Draggable Points",
+      "bytes": 2646,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-easing",
+      "file": "line-easing.js",
+      "category": "line",
+      "title": "Line Easing Visualizing",
+      "bytes": 6337,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-fisheye-lens",
+      "file": "line-fisheye-lens.js",
+      "category": "line",
+      "title": "Fisheye Lens on Line Chart",
+      "bytes": 6392,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-function",
+      "file": "line-function.js",
+      "category": "line",
+      "title": "Function Plot",
+      "bytes": 1110,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-gradient",
+      "file": "line-gradient.js",
+      "category": "line",
+      "title": "Line Gradient",
+      "bytes": 2262,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-graphic",
+      "file": "line-graphic.js",
+      "category": "line",
+      "title": "Custom Graphic Component",
+      "bytes": 2521,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-in-cartesian-coordinate-system",
+      "file": "line-in-cartesian-coordinate-system.js",
+      "category": "line",
+      "title": "Line Chart in Cartesian Coordinate System",
+      "bytes": 279,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-log",
+      "file": "line-log.js",
+      "category": "line",
+      "title": "Log Axis",
+      "bytes": 1019,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-marker",
+      "file": "line-marker.js",
+      "category": "line",
+      "title": "Temperature Change in the Coming Week",
+      "bytes": 1656,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-markline",
+      "file": "line-markline.js",
+      "category": "line",
+      "title": "Line with Marklines",
+      "bytes": 1500,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-pen",
+      "file": "line-pen.js",
+      "category": "line",
+      "title": "Click to Add Points",
+      "bytes": 1415,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-polar",
+      "file": "line-polar.js",
+      "category": "line",
+      "title": "Two Value-Axes in Polar",
+      "bytes": 653,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-polar2",
+      "file": "line-polar2.js",
+      "category": "line",
+      "title": "Two Value-Axes in Polar",
+      "bytes": 735,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-race",
+      "file": "line-race.js",
+      "category": "line",
+      "title": "Line Race",
+      "bytes": 2170,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "line-sections",
+      "file": "line-sections.js",
+      "category": "line",
+      "title": "Distribution of Electricity",
+      "bytes": 1875,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-simple",
+      "file": "line-simple.js",
+      "category": "line",
+      "title": "Basic Line Chart",
+      "bytes": 326,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-smooth",
+      "file": "line-smooth.js",
+      "category": "line",
+      "title": "Smoothed Line Chart",
+      "bytes": 358,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-stack",
+      "file": "line-stack.js",
+      "category": "line",
+      "title": "Stacked Line Chart",
+      "bytes": 1229,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-step",
+      "file": "line-step.js",
+      "category": "line",
+      "title": "Step Line",
+      "bytes": 914,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-style",
+      "file": "line-style.js",
+      "category": "line",
+      "title": "Line Style and Item Style",
+      "bytes": 593,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-tooltip-touch",
+      "file": "line-tooltip-touch.js",
+      "category": "line",
+      "title": "Tooltip and DataZoom on Mobile",
+      "bytes": 3084,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "line-y-category",
+      "file": "line-y-category.js",
+      "category": "line",
+      "title": "Line Y Category",
+      "bytes": 1037,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "lines-airline",
+      "file": "lines-airline.js",
+      "category": "map",
+      "title": "65k+ Airline",
+      "bytes": 1405,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "lines-bmap-bus",
+      "file": "lines-bmap-bus.js",
+      "category": "map",
+      "title": "Bus Lines of Beijing - Baidu Map",
+      "bytes": 4104,
+      "needs": [
+        "remote-data",
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "lines-bmap-effect",
+      "file": "lines-bmap-effect.js",
+      "category": "map",
+      "title": "Bus Lines of Beijing - Line Effect",
+      "bytes": 4932,
+      "needs": [
+        "remote-data",
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "lines-bmap",
+      "file": "lines-bmap.js",
+      "category": "map",
+      "title": "A Hiking Trail in Hangzhou - Baidu Map",
+      "bytes": 3741,
+      "needs": [
+        "remote-data",
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "lines-ny",
+      "file": "lines-ny.js",
+      "category": "map",
+      "title": "Use lines to draw 1 million New York streets",
+      "bytes": 1785,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "map-HK",
+      "file": "map-HK.js",
+      "category": "map",
+      "title": "Population Density of HongKong (2011)",
+      "bytes": 2939,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "map-bar-morph",
+      "file": "map-bar-morph.js",
+      "category": "map",
+      "title": "Morphing between Map and Bar",
+      "bytes": 4127,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "map-bin",
+      "file": "map-bin.js",
+      "category": "map",
+      "title": "Binning on Map",
+      "bytes": 36632,
+      "needs": [
+        "bmap",
+        "map"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "map-iceland-pie",
+      "file": "map-iceland-pie.js",
+      "category": "map",
+      "title": "Pie Charts on GEO Map",
+      "bytes": 1653,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "map-polygon",
+      "file": "map-polygon.js",
+      "category": "map",
+      "title": "Draw Polygon on Map",
+      "bytes": 17325,
+      "needs": [
+        "bmap",
+        "map"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "map-usa-projection",
+      "file": "map-usa-projection.js",
+      "category": "map",
+      "title": "USA Choropleth Map with Projection",
+      "bytes": 4394,
+      "needs": [
+        "remote-data",
+        "map",
+        "d3"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "map-usa",
+      "file": "map-usa.js",
+      "category": "map",
+      "title": "USA Population Estimates (2012)",
+      "bytes": 4220,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "matrix-confusion",
+      "file": "matrix-confusion.js",
+      "category": "matrix",
+      "title": "Confusion Matrix",
+      "bytes": 2237,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-correlation-heatmap",
+      "file": "matrix-correlation-heatmap.js",
+      "category": "matrix",
+      "title": "Correlation Matrix (Heatmap)",
+      "bytes": 996,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-correlation-scatter",
+      "file": "matrix-correlation-scatter.js",
+      "category": "matrix",
+      "title": "Correlation Matrix (Scatter)",
+      "bytes": 1276,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-covariance",
+      "file": "matrix-covariance.js",
+      "category": "matrix",
+      "title": "Covariance Matrix",
+      "bytes": 1925,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-graph",
+      "file": "matrix-graph.js",
+      "category": "matrix",
+      "title": "Graph Chart in Matrix",
+      "bytes": 2727,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-grid-layout",
+      "file": "matrix-grid-layout.js",
+      "category": "matrix",
+      "title": "Responsive grid layout based on matrix",
+      "bytes": 10394,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-mbti",
+      "file": "matrix-mbti.js",
+      "category": "matrix",
+      "title": "MBTI Partner Compatibility",
+      "bytes": 12508,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-mini-bar-data-collection",
+      "file": "matrix-mini-bar-data-collection.js",
+      "category": "matrix",
+      "title": "Matrix Header Data Collection (Mini Bar)",
+      "bytes": 3243,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-mini-bar-geo",
+      "file": "matrix-mini-bar-geo.js",
+      "category": "matrix",
+      "title": "Mini Bars and Geo in Matrix",
+      "bytes": 6011,
+      "needs": [
+        "remote-data",
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "matrix-periodic-table",
+      "file": "matrix-periodic-table.js",
+      "category": "matrix",
+      "title": "Periodic Table",
+      "bytes": 8347,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-pie",
+      "file": "matrix-pie.js",
+      "category": "matrix",
+      "title": "Pie Charts in Matrix",
+      "bytes": 1344,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-simple",
+      "file": "matrix-simple.js",
+      "category": "matrix",
+      "title": "Simple Matrix",
+      "bytes": 832,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-sparkline",
+      "file": "matrix-sparkline.js",
+      "category": "matrix",
+      "title": "Mini Line Charts (Sparkline) in Matrix",
+      "bytes": 3933,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "matrix-stock",
+      "file": "matrix-stock.js",
+      "category": "matrix",
+      "title": "Matrix Stock Application",
+      "bytes": 16665,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "mix-line-bar",
+      "file": "mix-line-bar.js",
+      "category": "bar",
+      "title": "Mixed Line and Bar",
+      "bytes": 1863,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "mix-timeline-finance",
+      "file": "mix-timeline-finance.js",
+      "category": "bar",
+      "title": "Finance Indices 2002",
+      "bytes": 26761,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "mix-zoom-on-value",
+      "file": "mix-zoom-on-value.js",
+      "category": "bar",
+      "title": "Mix Zoom On Value",
+      "bytes": 2078,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "multiple-x-axis",
+      "file": "multiple-x-axis.js",
+      "category": "line",
+      "title": "Multiple X Axes",
+      "bytes": 2168,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "multiple-y-axis",
+      "file": "multiple-y-axis.js",
+      "category": "bar",
+      "title": "Multiple Y Axes",
+      "bytes": 2101,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "parallel-aqi",
+      "file": "parallel-aqi.js",
+      "category": "parallel",
+      "title": "Parallel Aqi",
+      "bytes": 6642,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "parallel-nutrients",
+      "file": "parallel-nutrients.js",
+      "category": "parallel",
+      "title": "Parallel Nutrients",
+      "bytes": 4532,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "parallel-simple",
+      "file": "parallel-simple.js",
+      "category": "parallel",
+      "title": "Basic Parallel",
+      "bytes": 531,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-bar-transition",
+      "file": "pictorialBar-bar-transition.js",
+      "category": "pictorialBar",
+      "title": "Transition between pictorialBar and bar",
+      "bytes": 13806,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-body-fill",
+      "file": "pictorialBar-body-fill.js",
+      "category": "pictorialBar",
+      "title": "Water Content",
+      "bytes": 13145,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-dotted",
+      "file": "pictorialBar-dotted.js",
+      "category": "pictorialBar",
+      "title": "Dotted bar",
+      "bytes": 2062,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-forest",
+      "file": "pictorialBar-forest.js",
+      "category": "pictorialBar",
+      "title": "Expansion of forest",
+      "bytes": 3746,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-hill",
+      "file": "pictorialBar-hill.js",
+      "category": "pictorialBar",
+      "title": "Wish List and Mountain Height",
+      "bytes": 5417,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "pictorialBar-spirit",
+      "file": "pictorialBar-spirit.js",
+      "category": "pictorialBar",
+      "title": "Spirits",
+      "bytes": 15419,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-vehicle",
+      "file": "pictorialBar-vehicle.js",
+      "category": "pictorialBar",
+      "title": "Vehicles",
+      "bytes": 12688,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pictorialBar-velocity",
+      "file": "pictorialBar-velocity.js",
+      "category": "pictorialBar",
+      "title": "Velocity of Christmas Reindeers",
+      "bytes": 16685,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-alignTo",
+      "file": "pie-alignTo.js",
+      "category": "pie",
+      "title": "Pie Label Align",
+      "bytes": 1696,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-borderRadius",
+      "file": "pie-borderRadius.js",
+      "category": "pie",
+      "title": "Doughnut Chart with Rounded Corner",
+      "bytes": 929,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-custom",
+      "file": "pie-custom.js",
+      "category": "pie",
+      "title": "Customized Pie",
+      "bytes": 1356,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-doughnut",
+      "file": "pie-doughnut.js",
+      "category": "pie",
+      "title": "Doughnut Chart",
+      "bytes": 797,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-half-donut",
+      "file": "pie-half-donut.js",
+      "category": "pie",
+      "title": "Half Doughnut Chart",
+      "bytes": 687,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-labelLine-adjust",
+      "file": "pie-labelLine-adjust.js",
+      "category": "pie",
+      "title": "Label Line Adjust",
+      "bytes": 2387,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-legend",
+      "file": "pie-legend.js",
+      "category": "pie",
+      "title": "Pie with Scrollable Legend",
+      "bytes": 2477,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-nest",
+      "file": "pie-nest.js",
+      "category": "pie",
+      "title": "Nested Pies",
+      "bytes": 2078,
+      "needs": [
+        "bmap"
+      ],
+      "skipReason": "Requires Baidu Map (bmap)"
+    },
+    {
+      "id": "pie-padAngle",
+      "file": "pie-padAngle.js",
+      "category": "pie",
+      "title": "Pie with padAngle",
+      "bytes": 881,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-parliament-transition",
+      "file": "pie-parliament-transition.js",
+      "category": "custom",
+      "title": "Transition of Parliament and Pie Chart",
+      "bytes": 3292,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-pattern",
+      "file": "pie-pattern.js",
+      "category": "pie",
+      "title": "Texture on Pie Chart",
+      "bytes": 70398,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-rich-text",
+      "file": "pie-rich-text.js",
+      "category": "pie",
+      "title": "Pie Special Label",
+      "bytes": 3498,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "pie-roseType-simple",
+      "file": "pie-roseType-simple.js",
+      "category": "pie",
+      "title": "Nightingale Chart",
+      "bytes": 901,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-roseType",
+      "file": "pie-roseType.js",
+      "category": "pie",
+      "title": "Nightingale Chart",
+      "bytes": 1848,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "pie-simple",
+      "file": "pie-simple.js",
+      "category": "pie",
+      "title": "Referer of a Website",
+      "bytes": 789,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "polar-endAngle",
+      "file": "polar-endAngle.js",
+      "category": "bar",
+      "title": "Polar endAngle",
+      "bytes": 703,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "polar-roundCap",
+      "file": "polar-roundCap.js",
+      "category": "bar",
+      "title": "Rounded Bar on Polar",
+      "bytes": 870,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "radar-aqi",
+      "file": "radar-aqi.js",
+      "category": "radar",
+      "title": "AQI - Radar Chart",
+      "bytes": 5297,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "radar-custom",
+      "file": "radar-custom.js",
+      "category": "radar",
+      "title": "Customized Radar Chart",
+      "bytes": 2781,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "radar-multiple",
+      "file": "radar-multiple.js",
+      "category": "radar",
+      "title": "Multiple Radar",
+      "bytes": 2026,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "radar",
+      "file": "radar.js",
+      "category": "radar",
+      "title": "Basic Radar Chart",
+      "bytes": 877,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "radar2",
+      "file": "radar2.js",
+      "category": "radar",
+      "title": "Proportion of Browsers",
+      "bytes": 1403,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sankey-energy",
+      "file": "sankey-energy.js",
+      "category": "sankey",
+      "title": "Gradient Edge",
+      "bytes": 681,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "sankey-itemstyle",
+      "file": "sankey-itemstyle.js",
+      "category": "sankey",
+      "title": "Specify ItemStyle for Each Node in Sankey",
+      "bytes": 27873,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sankey-levels",
+      "file": "sankey-levels.js",
+      "category": "sankey",
+      "title": "Sankey with Levels Setting",
+      "bytes": 1645,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "sankey-nodeAlign-left",
+      "file": "sankey-nodeAlign-left.js",
+      "category": "sankey",
+      "title": "Node Align Left in Sankey",
+      "bytes": 724,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "sankey-nodeAlign-right",
+      "file": "sankey-nodeAlign-right.js",
+      "category": "sankey",
+      "title": "Node Align Right in Sankey",
+      "bytes": 751,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "sankey-simple",
+      "file": "sankey-simple.js",
+      "category": "sankey",
+      "title": "Basic Sankey",
+      "bytes": 912,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sankey-vertical",
+      "file": "sankey-vertical.js",
+      "category": "sankey",
+      "title": "Sankey Orient Vertical",
+      "bytes": 953,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-aggregate-bar",
+      "file": "scatter-aggregate-bar.js",
+      "category": "scatter",
+      "title": "Aggregate Scatter to Bar",
+      "bytes": 9800,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-anscombe-quartet",
+      "file": "scatter-anscombe-quartet.js",
+      "category": "scatter",
+      "title": "Anscomb's quartet",
+      "bytes": 2622,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-aqi-color",
+      "file": "scatter-aqi-color.js",
+      "category": "scatter",
+      "title": "Scatter Aqi Color",
+      "bytes": 7519,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-clustering-process",
+      "file": "scatter-clustering-process.js",
+      "category": "scatter",
+      "title": "Clustering Process",
+      "bytes": 5459,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "scatter-clustering",
+      "file": "scatter-clustering.js",
+      "category": "scatter",
+      "title": "Clustering Process",
+      "bytes": 2814,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "scatter-effect",
+      "file": "scatter-effect.js",
+      "category": "scatter",
+      "title": "Effect Scatter Chart",
+      "bytes": 5125,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-exponential-regression",
+      "file": "scatter-exponential-regression.js",
+      "category": "scatter",
+      "title": "Exponential Regression",
+      "bytes": 1690,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "scatter-jitter",
+      "file": "scatter-jitter.js",
+      "category": "scatter",
+      "title": "Scatter with Jittering",
+      "bytes": 807,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-label-align-right",
+      "file": "scatter-label-align-right.js",
+      "category": "scatter",
+      "title": "Align Label on the Top",
+      "bytes": 2596,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-label-align-top",
+      "file": "scatter-label-align-top.js",
+      "category": "scatter",
+      "title": "Align Label on the Top",
+      "bytes": 2471,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-large",
+      "file": "scatter-large.js",
+      "category": "scatter",
+      "title": "Large Scatter",
+      "bytes": 1269,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-life-expectancy-timeline",
+      "file": "scatter-life-expectancy-timeline.js",
+      "category": "scatter",
+      "title": "Life Expectancy and GDP",
+      "bytes": 4091,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-linear-regression",
+      "file": "scatter-linear-regression.js",
+      "category": "scatter",
+      "title": "Linear Regression",
+      "bytes": 5976,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "scatter-logarithmic-regression",
+      "file": "scatter-logarithmic-regression.js",
+      "category": "scatter",
+      "title": "Logarithmic Regression",
+      "bytes": 3690,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "scatter-map-brush",
+      "file": "scatter-map-brush.js",
+      "category": "scatter",
+      "title": "Scatter Map Brush",
+      "bytes": 21770,
+      "needs": [
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "scatter-map",
+      "file": "scatter-map.js",
+      "category": "scatter",
+      "title": "Air Quality",
+      "bytes": 14447,
+      "needs": [
+        "map"
+      ],
+      "skipReason": "Requires map / geoJSON assets"
+    },
+    {
+      "id": "scatter-matrix",
+      "file": "scatter-matrix.js",
+      "category": "parallel",
+      "title": "Scatter Matrix",
+      "bytes": 9179,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-nebula",
+      "file": "scatter-nebula.js",
+      "category": "scatter",
+      "title": "Scatter Nebula",
+      "bytes": 1916,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-nutrients-matrix",
+      "file": "scatter-nutrients-matrix.js",
+      "category": "scatter",
+      "title": "Scatter Nutrients Matrix",
+      "bytes": 11025,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-nutrients",
+      "file": "scatter-nutrients.js",
+      "category": "scatter",
+      "title": "Scatter Nutrients",
+      "bytes": 3875,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-painter-choice",
+      "file": "scatter-painter-choice.js",
+      "category": "scatter",
+      "title": "Master Painter Color Choices Throughout History",
+      "bytes": 1571,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-polar-punchCard",
+      "file": "scatter-polar-punchCard.js",
+      "category": "scatter",
+      "title": "Punch Card of Github",
+      "bytes": 3354,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-polynomial-regression",
+      "file": "scatter-polynomial-regression.js",
+      "category": "scatter",
+      "title": "Polynomial Regression",
+      "bytes": 1585,
+      "needs": [
+        "ecStat"
+      ],
+      "skipReason": null,
+      "notes": "Uses echarts-stat"
+    },
+    {
+      "id": "scatter-punchCard",
+      "file": "scatter-punchCard.js",
+      "category": "scatter",
+      "title": "Punch Card of Github",
+      "bytes": 3416,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-simple",
+      "file": "scatter-simple.js",
+      "category": "scatter",
+      "title": "Basic Scatter Chart",
+      "bytes": 706,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-single-axis",
+      "file": "scatter-single-axis.js",
+      "category": "scatter",
+      "title": "Scatter on Single Axis",
+      "bytes": 3228,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-stream-visual",
+      "file": "scatter-stream-visual.js",
+      "category": "scatter",
+      "title": "Visual interaction with stream",
+      "bytes": 1213,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-symbol-morph",
+      "file": "scatter-symbol-morph.js",
+      "category": "scatter",
+      "title": "Symbol Shape Morph",
+      "bytes": 5818,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-weibo",
+      "file": "scatter-weibo.js",
+      "category": "scatter",
+      "title": "Sign in of weibo",
+      "bytes": 2544,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "scatter-weight",
+      "file": "scatter-weight.js",
+      "category": "scatter",
+      "title": "Distribution of Height and Weight",
+      "bytes": 12499,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "scatter-world-population",
+      "file": "scatter-world-population.js",
+      "category": "scatter",
+      "title": "World Population (2011)",
+      "bytes": 25596,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-book",
+      "file": "sunburst-book.js",
+      "category": "sunburst",
+      "title": "Book Records",
+      "bytes": 8752,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-borderRadius",
+      "file": "sunburst-borderRadius.js",
+      "category": "sunburst",
+      "title": "Sunburst with Rounded Corner",
+      "bytes": 1344,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-drink",
+      "file": "sunburst-drink.js",
+      "category": "sunburst",
+      "title": "Drink Flavors",
+      "bytes": 16295,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-label-rotate",
+      "file": "sunburst-label-rotate.js",
+      "category": "sunburst",
+      "title": "Sunburst Label Rotate",
+      "bytes": 2306,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-monochrome",
+      "file": "sunburst-monochrome.js",
+      "category": "sunburst",
+      "title": "Monochrome Sunburst",
+      "bytes": 4125,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-simple",
+      "file": "sunburst-simple.js",
+      "category": "sunburst",
+      "title": "Basic Sunburst",
+      "bytes": 1324,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "sunburst-visualMap",
+      "file": "sunburst-visualMap.js",
+      "category": "sunburst",
+      "title": "Sunburst VisualMap",
+      "bytes": 2056,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "themeRiver-basic",
+      "file": "themeRiver-basic.js",
+      "category": "themeRiver",
+      "title": "ThemeRiver",
+      "bytes": 5132,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "themeRiver-lastfm",
+      "file": "themeRiver-lastfm.js",
+      "category": "themeRiver",
+      "title": "ThemeRiver Lastfm",
+      "bytes": 2590,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "tree-basic",
+      "file": "tree-basic.js",
+      "category": "tree",
+      "title": "From Left to Right Tree",
+      "bytes": 1140,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "tree-legend",
+      "file": "tree-legend.js",
+      "category": "tree",
+      "title": "Multiple Trees",
+      "bytes": 6343,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "tree-orient-bottom-top",
+      "file": "tree-orient-bottom-top.js",
+      "category": "tree",
+      "title": "From Bottom to Top Tree",
+      "bytes": 1058,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "tree-orient-right-left",
+      "file": "tree-orient-right-left.js",
+      "category": "tree",
+      "title": "From Right to Left Tree",
+      "bytes": 1139,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "tree-polyline",
+      "file": "tree-polyline.js",
+      "category": "tree",
+      "title": "Tree with Polyline Edge",
+      "bytes": 4750,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "tree-radial",
+      "file": "tree-radial.js",
+      "category": "tree",
+      "title": "Radial Tree",
+      "bytes": 677,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "tree-vertical",
+      "file": "tree-vertical.js",
+      "category": "tree",
+      "title": "From Top to Bottom Tree",
+      "bytes": 1024,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "treemap-disk",
+      "file": "treemap-disk.js",
+      "category": "treemap",
+      "title": "Disk Usage",
+      "bytes": 1594,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "treemap-drill-down",
+      "file": "treemap-drill-down.js",
+      "category": "treemap",
+      "title": "ECharts Option Query",
+      "bytes": 1937,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "treemap-obama",
+      "file": "treemap-obama.js",
+      "category": "treemap",
+      "title": "How $3.7 Trillion is Spent",
+      "bytes": 5850,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "treemap-show-parent",
+      "file": "treemap-show-parent.js",
+      "category": "treemap",
+      "title": "Show Parent Labels",
+      "bytes": 1933,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "treemap-simple",
+      "file": "treemap-simple.js",
+      "category": "treemap",
+      "title": "Basic Treemap",
+      "bytes": 748,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "treemap-sunburst-transition",
+      "file": "treemap-sunburst-transition.js",
+      "category": "treemap",
+      "title": "Transition between Treemap and Sunburst",
+      "bytes": 1432,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "treemap-visual",
+      "file": "treemap-visual.js",
+      "category": "treemap",
+      "title": "Gradient Mapping",
+      "bytes": 3774,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    },
+    {
+      "id": "watermark",
+      "file": "watermark.js",
+      "category": "bar",
+      "title": "Watermark - ECharts Download",
+      "bytes": 4669,
+      "needs": [],
+      "skipReason": null
+    },
+    {
+      "id": "wind-barb",
+      "file": "wind-barb.js",
+      "category": "custom",
+      "title": "Wind Barb",
+      "bytes": 7409,
+      "needs": [
+        "remote-data"
+      ],
+      "skipReason": null,
+      "notes": "Uses remote/local data via ROOT_PATH"
+    }
+  ]
+}

@@ -1,44 +1,25 @@
-# Chart Library Compare
+# Chart Libraries - Full Official Galleries
 
-Polished Vite + React + TypeScript demo that renders the **same** mock business metrics with three popular chart stacks:
+Vite + React + TypeScript demo with complete galleries for Apache ECharts, Recharts, and Tremor.
 
-| Library | Rendering | Strengths in this demo |
-|---|---|---|
-| **Apache ECharts** (`echarts` + `echarts-for-react`) | Canvas (default) | Dense options, combo axes, polished tooltips |
-| **Recharts** | SVG | Declarative React chart primitives |
-| **Tremor** (`@tremor/react`) | SVG (Recharts under the hood) + Tailwind | KPI cards, sparklines, dashboard UI |
+## Tabs
 
-## What is compared
+- ECharts Gallery: mirrors official top-level example JS (~297). Lazy-fetched and evaluated on click.
+- Recharts Gallery: every chart component in this package version + Brush / Reference / ErrorBar demos.
+- Tremor Gallery: complete Tremor 3.18 chart / vis / spark surface (not ECharts-scale).
+- Compare: slim side-by-side on overlapping types.
 
-For each library (and in **Compare all** side-by-side mode):
+## ECharts examples
 
-- KPI metric cards with sparklines (native on Tremor; approximated on ECharts / Recharts)
-- Line — revenue & profit
-- Area — visitors
-- Stacked bar — category channel mix
-- Donut — conversion funnel stages
-- Scatter — ad spend vs conversions by channel
-- Combo line+bar — traffic sessions + bounce rate (Tremor approximates with stacked panels)
+- Files: public/echarts-official/*.js + manifest.json
+- Refresh: scripts/fetch-echarts-examples.mjs (package script fetch:echarts)
+- Data assets: public/echarts-remote/ used as ROOT_PATH
+- Known skips: bmap and map/geoJSON-heavy examples show skip cards
+- Skipped dirs: archive/, doc-example/, gl/
 
-Shared data: `src/data/mockData.ts`.
+## Stack
 
-## Setup
-
-```bash
-cd dashboard-demo
-npm install
-npm run dev
-```
-
-Production build:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Stack notes
-
-- **Tailwind CSS v3** is configured for Tremor (content paths + color safelist).
-- Dark modern dashboard aesthetic; desktop-first.
-- No backend required.
+- echarts 5 + echarts-stat
+- recharts 2.x
+- @tremor/react 3.18.x + Tailwind CSS v3
+- vite allowedHosts true for server and preview

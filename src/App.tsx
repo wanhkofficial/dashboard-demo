@@ -1,22 +1,45 @@
-import { useState } from 'react'
-import { EChartsSuite } from './charts/echarts/EChartsCharts'
-import { RechartsSuite } from './charts/recharts/RechartsCharts'
-import { TremorSuite } from './charts/tremor/TremorCharts'
-import { CompareView } from './components/CompareView'
-import type { LibraryKey } from './components/LibraryNotes'
-import { LIBRARY_META } from './components/LibraryNotes'
+import { useState, lazy, Suspense } from "react"
+const CompareView = lazy(() =>
+  import("./components/CompareView").then((m) => ({
+    default: m.CompareView,
+  })),
+)
 
-type Tab = LibraryKey | 'compare'
+const EChartsOfficialGallery = lazy(() =>
+  import("./galleries/echarts/EChartsOfficialGallery").then((m) => ({
+    default: m.EChartsOfficialGallery,
+  })),
+)
+const RechartsOfficialGallery = lazy(() =>
+  import("./galleries/recharts/RechartsOfficialGallery").then((m) => ({
+    default: m.RechartsOfficialGallery,
+  })),
+)
+const TremorOfficialGallery = lazy(() =>
+  import("./galleries/tremor/TremorOfficialGallery").then((m) => ({
+    default: m.TremorOfficialGallery,
+  })),
+)
+
+type Tab = "echarts" | "recharts" | "tremor" | "compare"
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: 'echarts', label: 'ECharts' },
-  { id: 'recharts', label: 'Recharts' },
-  { id: 'tremor', label: 'Tremor' },
-  { id: 'compare', label: 'Compare all' },
+  { id: "echarts", label: "ECharts Gallery" },
+  { id: "recharts", label: "Recharts Gallery" },
+  { id: "tremor", label: "Tremor Gallery" },
+  { id: "compare", label: "Compare" },
 ]
 
+function GalleryFallback() {
+  return (
+    <div className="rounded-xl border border-slate-800 bg-slate-950/50 px-4 py-10 text-center text-sm text-slate-500">
+      Loading gallery…
+    </div>
+  )
+}
+
 export default function App() {
-  const [tab, setTab] = useState<Tab>('compare')
+  const [tab, setTab] = useState<Tab>('echarts')
 
   return (
     <div className="min-h-screen text-slate-200">
@@ -24,15 +47,15 @@ export default function App() {
         <header className="mb-8 flex flex-col gap-6 border-b border-slate-800/80 pb-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-400/80">
-              Dashboard demo
+              Official galleries demo
             </p>
             <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Chart Library Compare
+              Chart Libraries — Full Galleries
             </h1>
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-400">
-              Apache ECharts (Canvas), Recharts (SVG), and Tremor (UI kit on Recharts) — each with a
-              distinct visual fingerprint and library-specific chart types, not just reskinned copies
-              of the same six panels.
+              Complete official-style galleries for Apache ECharts (~297 examples), Recharts (all chart
+              components), and Tremor 3.18 (full chart / vis / spark surface). Compare keeps a slim
+              side-by-side for overlapping types.
             </p>
           </div>
           <div className="flex flex-wrap gap-2 rounded-2xl border border-slate-800 bg-slate-950/80 p-1.5 shadow-inner">
@@ -56,23 +79,15 @@ export default function App() {
           </div>
         </header>
 
-        {tab !== 'compare' && (
-          <div className="mb-4 rounded-xl border border-slate-800/80 bg-slate-950/50 px-4 py-3 text-sm text-slate-400">
-            Viewing <span className="font-medium text-slate-200">{LIBRARY_META[tab].name}</span>
-            <span className="mx-2 text-slate-700">·</span>
-            {LIBRARY_META[tab].note}
-          </div>
-        )}
-
-        {tab === 'echarts' && <EChartsSuite />}
-        {tab === 'recharts' && <RechartsSuite />}
-        {tab === 'tremor' && <TremorSuite />}
-        {tab === 'compare' && <CompareView />}
+        <Suspense fallback={<GalleryFallback />}>
+          {tab === 'echarts' && <EChartsOfficialGallery />}
+          {tab === 'recharts' && <RechartsOfficialGallery />}
+          {tab === 'tremor' && <TremorOfficialGallery />}
+          {tab === 'compare' && <CompareView />}
+        </Suspense>
 
         <footer className="mt-10 border-t border-slate-800/80 pt-6 text-xs text-slate-600">
-          Shared mock data lives in <code className="text-slate-500">src/data/mockData.ts</code>. Extra
-          datasets power radar, heatmap, OHLC, treemap, tracker, and progress panels. No backend —
-          Vite + React + TypeScript client demo.
+          ECharts examples live in public/echarts-official and are loaded on demand.
         </footer>
       </div>
     </div>
