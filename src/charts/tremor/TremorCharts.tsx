@@ -16,12 +16,8 @@ import {
   Tracker,
   Title,
 } from '@tremor/react'
+import { useLiveData } from '../../data/LiveDataContext'
 import {
-  monthlySales,
-  categorySales,
-  funnelPie,
-  channelScatter,
-  kpiMetrics,
   barListItems,
   categoryBarValues,
   progressItems,
@@ -33,11 +29,12 @@ import { LIBRARY_META } from '../../components/LibraryNotes'
 
 const meta = LIBRARY_META.tremor
 
-const sparkData = kpiMetrics.map((kpi) =>
-  kpi.spark.map((v, i) => ({ month: monthlySales[i].month, value: v })),
-)
-
 export function TremorKpis() {
+  const { data, kpiMetrics } = useLiveData()
+  const { monthlySales } = data
+  const sparkData = kpiMetrics.map((kpi) =>
+    kpi.spark.map((v, i) => ({ month: monthlySales[i]?.month ?? String(i), value: v })),
+  )
   return (
     <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
       {kpiMetrics.map((kpi, idx) => (
@@ -79,6 +76,8 @@ export function TremorKpis() {
 }
 
 export function TremorLine() {
+  const { data } = useLiveData()
+  const { monthlySales } = data
   return (
     <ChartPanel title="Revenue & Profit (LineChart)" library={meta.name} note={meta.note} accent="tremor">
       <LineChart
@@ -96,6 +95,8 @@ export function TremorLine() {
 }
 
 export function TremorArea() {
+  const { data } = useLiveData()
+  const { monthlySales } = data
   return (
     <ChartPanel title="Visitors (AreaChart)" library={meta.name} note={meta.note} accent="tremor">
       <AreaChart
@@ -113,6 +114,8 @@ export function TremorArea() {
 }
 
 export function TremorStackedBar() {
+  const { data } = useLiveData()
+  const { categorySales } = data
   return (
     <ChartPanel title="Category Mix (Stacked BarChart)" library={meta.name} note={meta.note} accent="tremor">
       <BarChart
@@ -129,6 +132,8 @@ export function TremorStackedBar() {
 }
 
 export function TremorGroupedBar() {
+  const { data } = useLiveData()
+  const { categorySales } = data
   return (
     <ChartPanel title="Category Mix (Grouped BarChart)" library={meta.name} note="stack={false}" accent="tremor">
       <BarChart
@@ -144,6 +149,8 @@ export function TremorGroupedBar() {
 }
 
 export function TremorPie() {
+  const { data } = useLiveData()
+  const { funnelPie } = data
   return (
     <ChartPanel title="Conversion Funnel (DonutChart)" library={meta.name} note={meta.note} accent="tremor">
       <div className="flex h-[280px] flex-col items-center justify-center">
@@ -162,6 +169,8 @@ export function TremorPie() {
 }
 
 export function TremorScatter() {
+  const { data } = useLiveData()
+  const { channelScatter } = data
   return (
     <ChartPanel title="Spend vs Conversions (ScatterChart)" library={meta.name} note={meta.note} accent="tremor">
       <ScatterChart
@@ -264,6 +273,8 @@ export function TremorTrackerPanel() {
 }
 
 export function TremorFunnel() {
+  const { data } = useLiveData()
+  const { funnelPie } = data
   return (
     <ChartPanel title="Sales Funnel (FunnelChart)" library={meta.name} note="Native Tremor FunnelChart" accent="tremor">
       <FunnelChart

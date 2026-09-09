@@ -38,8 +38,24 @@ import {
   TremorTrackerPanel,
   TremorFunnel,
 } from '../charts/tremor/TremorCharts'
+import {
+  ChartjsLine,
+  ChartjsArea,
+  ChartjsBar,
+  ChartjsDoughnut,
+  ChartjsScatter,
+} from '../charts/chartjs/ChartjsCharts'
+import {
+  NivoLine,
+  NivoArea,
+  NivoBar,
+  NivoPie,
+  NivoScatter,
+} from '../charts/nivo/NivoCharts'
 import { FingerprintBanner } from './FingerprintBanner'
 import { LIBRARY_ONLY } from './LibraryNotes'
+import { LiveDataPanel } from './LiveDataPanel'
+import type { LibraryKey } from './LibraryNotes'
 
 type RowProps = {
   title: string
@@ -49,8 +65,12 @@ type RowProps = {
 function CompareRow({ title, children }: RowProps) {
   return (
     <div className="space-y-3">
-      <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 light:text-slate-500">{title}</h2>
-      <div className="grid gap-4 xl:grid-cols-3">{children}</div>
+      <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400 light:text-slate-500">
+        {title}
+      </h2>
+      <div className="flex gap-4 overflow-x-auto pb-2 xl:grid xl:grid-cols-5 xl:overflow-visible">
+        {children}
+      </div>
     </div>
   )
 }
@@ -59,12 +79,14 @@ function ColumnShell({
   library,
   children,
 }: {
-  library: 'echarts' | 'recharts' | 'tremor'
+  library: LibraryKey
   children: ReactNode
 }) {
   const { isDark } = useTheme()
   return (
-    <div className={`space-y-2 ${library === 'tremor' && isDark ? 'dark' : ''}`}>
+    <div
+      className={`min-w-[280px] flex-1 space-y-2 xl:min-w-0 ${library === 'tremor' && isDark ? 'dark' : ''}`}
+    >
       <FingerprintBanner library={library} compact />
       {children}
     </div>
@@ -73,17 +95,22 @@ function ColumnShell({
 
 export function CompareView() {
   return (
-    <div className="space-y-10">
+    <div className="relative space-y-10 lg:pr-[340px]">
+      <LiveDataPanel />
+
       <div className="rounded-2xl border border-slate-800/80 bg-slate-950/50 px-4 py-4 text-sm text-slate-400 light:border-slate-200 light:bg-white/80 light:text-slate-600">
-        <p className="font-medium text-slate-200 light:text-slate-900">Quick compare - overlapping chart types</p>
+        <p className="font-medium text-slate-200 light:text-slate-900">
+          Quick compare — five open-source libraries
+        </p>
         <p className="mt-1 text-xs leading-relaxed">
-          Each column keeps its fingerprint banner and visual language so Canvas (ECharts), SVG
-          (Recharts), and Tremor UI stay obviously different — same mock data, different chrome.
+          ECharts · Recharts · Tremor · Chart.js · Nivo side-by-side on overlapping types. Open{' '}
+          <strong className="text-cyan-300 light:text-cyan-700">Live data</strong> to change
+          category/series counts, bases, noise, and palette — all bound charts update immediately.
         </p>
       </div>
 
       <CompareRow title="KPI cards + sparklines">
-        <div className="xl:col-span-3">
+        <div className="xl:col-span-5 w-full min-w-0">
           <div className="grid gap-4 lg:grid-cols-3">
             <ColumnShell library="echarts">
               <EChartsKpis />
@@ -108,9 +135,15 @@ export function CompareView() {
         <ColumnShell library="tremor">
           <TremorLine />
         </ColumnShell>
+        <ColumnShell library="chartjs">
+          <ChartjsLine />
+        </ColumnShell>
+        <ColumnShell library="nivo">
+          <NivoLine />
+        </ColumnShell>
       </CompareRow>
 
-      <CompareRow title="Area — visitors">
+      <CompareRow title="Area — primary series">
         <ColumnShell library="echarts">
           <EChartsArea />
         </ColumnShell>
@@ -120,9 +153,15 @@ export function CompareView() {
         <ColumnShell library="tremor">
           <TremorArea />
         </ColumnShell>
+        <ColumnShell library="chartjs">
+          <ChartjsArea />
+        </ColumnShell>
+        <ColumnShell library="nivo">
+          <NivoArea />
+        </ColumnShell>
       </CompareRow>
 
-      <CompareRow title="Stacked bar — category mix">
+      <CompareRow title="Stacked bar — category / series mix">
         <ColumnShell library="echarts">
           <EChartsBar />
         </ColumnShell>
@@ -132,9 +171,15 @@ export function CompareView() {
         <ColumnShell library="tremor">
           <TremorBar />
         </ColumnShell>
+        <ColumnShell library="chartjs">
+          <ChartjsBar />
+        </ColumnShell>
+        <ColumnShell library="nivo">
+          <NivoBar />
+        </ColumnShell>
       </CompareRow>
 
-      <CompareRow title="Donut — conversion funnel">
+      <CompareRow title="Donut / pie — distribution">
         <ColumnShell library="echarts">
           <EChartsPie />
         </ColumnShell>
@@ -144,9 +189,15 @@ export function CompareView() {
         <ColumnShell library="tremor">
           <TremorPie />
         </ColumnShell>
+        <ColumnShell library="chartjs">
+          <ChartjsDoughnut />
+        </ColumnShell>
+        <ColumnShell library="nivo">
+          <NivoPie />
+        </ColumnShell>
       </CompareRow>
 
-      <CompareRow title="Scatter — spend vs conversions">
+      <CompareRow title="Scatter">
         <ColumnShell library="echarts">
           <EChartsScatter />
         </ColumnShell>
@@ -155,6 +206,12 @@ export function CompareView() {
         </ColumnShell>
         <ColumnShell library="tremor">
           <TremorScatter />
+        </ColumnShell>
+        <ColumnShell library="chartjs">
+          <ChartjsScatter />
+        </ColumnShell>
+        <ColumnShell library="nivo">
+          <NivoScatter />
         </ColumnShell>
       </CompareRow>
 
@@ -170,19 +227,18 @@ export function CompareView() {
         </ColumnShell>
       </CompareRow>
 
-      {/* Library-only condensed highlights */}
       <section className="space-y-4">
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">
             Library-only showcases
           </h2>
           <p className="mt-1 text-xs text-slate-500">
-            Condensed highlights unique to each library. Open the individual tabs for the full suites
-            (treemap, nightingale, grouped bars, ProgressBar, CategoryBar, etc.).
+            Condensed highlights unique to each library. Open individual gallery tabs for fuller
+            suites.
           </p>
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid gap-4 lg:grid-cols-3 xl:grid-cols-5">
           <div className="space-y-3">
             <FingerprintBanner library="echarts" compact />
             <ul className="flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wide text-sky-300/90">
@@ -226,6 +282,32 @@ export function CompareView() {
             <TremorTrackerPanel />
             <TremorFunnel />
             <TremorCombo />
+          </div>
+
+          <div className="space-y-3">
+            <FingerprintBanner library="chartjs" compact />
+            <ul className="flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wide text-rose-300/90">
+              {LIBRARY_ONLY.chartjs.map((t) => (
+                <li key={t} className="rounded border border-rose-500/30 bg-rose-500/10 px-2 py-0.5">
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <ChartjsDoughnut />
+            <ChartjsScatter />
+          </div>
+
+          <div className="space-y-3">
+            <FingerprintBanner library="nivo" compact />
+            <ul className="flex flex-wrap gap-1.5 text-[10px] uppercase tracking-wide text-amber-300/90">
+              {LIBRARY_ONLY.nivo.map((t) => (
+                <li key={t} className="rounded border border-amber-500/30 bg-amber-500/10 px-2 py-0.5">
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <NivoPie />
+            <NivoScatter />
           </div>
         </div>
       </section>

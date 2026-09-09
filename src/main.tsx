@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
 import { ThemeProvider } from './theme/ThemeContext'
+import { LiveDataProvider } from './data/LiveDataContext'
 import './index.css'
 
 // Apply before paint to avoid flash
@@ -18,7 +19,9 @@ try {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
-      <App />
+      <LiveDataProvider>
+        <App />
+      </LiveDataProvider>
     </ThemeProvider>
   </StrictMode>,
 )

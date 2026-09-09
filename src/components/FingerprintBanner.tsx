@@ -25,6 +25,20 @@ const BANNER: Record<
       'border-cyan-500/50 bg-gradient-to-r from-slate-950 via-[#0a1f1c] to-slate-950 shadow-[0_0_20px_rgba(34,211,238,0.15)] light:from-emerald-50 light:via-white light:to-cyan-50 light:shadow-none light:border-cyan-300',
     badge: 'border-emerald-400/50 bg-emerald-500/15 text-emerald-300 light:border-emerald-400 light:bg-emerald-100 light:text-emerald-800',
   },
+  chartjs: {
+    title: 'Renderer: Canvas · Chart.js',
+    subtitle: 'react-chartjs-2 · registerables · distinct from ECharts canvas chrome',
+    className:
+      'border-rose-400/60 bg-gradient-to-r from-slate-950 via-[#281018] to-slate-950 shadow-[0_0_20px_rgba(251,113,133,0.18)] light:from-rose-50 light:via-white light:to-orange-50 light:shadow-none light:border-rose-300',
+    badge: 'border-rose-400/50 bg-rose-500/15 text-rose-300 light:border-rose-400 light:bg-rose-100 light:text-rose-800',
+  },
+  nivo: {
+    title: 'Renderer: SVG · Nivo',
+    subtitle: 'ResponsiveLine / Bar / Pie / Scatter · theme tokens for dark / light',
+    className:
+      'border-amber-400/60 bg-gradient-to-r from-slate-950 via-[#281e0a] to-slate-950 shadow-[0_0_20px_rgba(251,191,36,0.16)] light:from-amber-50 light:via-white light:to-yellow-50 light:shadow-none light:border-amber-300',
+    badge: 'border-amber-400/50 bg-amber-500/15 text-amber-300 light:border-amber-400 light:bg-amber-100 light:text-amber-900',
+  },
 }
 
 type Props = {

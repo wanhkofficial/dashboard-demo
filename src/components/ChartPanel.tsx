@@ -16,6 +16,8 @@ const ACCENT: Record<Accent, string> = {
   echarts: 'border-sky-500/40 shadow-[0_0_18px_rgba(56,189,248,0.12)] light:shadow-none',
   recharts: 'border-violet-500/40 border-dashed shadow-[0_0_18px_rgba(167,139,250,0.1)] light:shadow-none',
   tremor: 'border-cyan-500/35 shadow-[0_0_18px_rgba(16,185,129,0.1)] light:shadow-none',
+  chartjs: 'border-rose-500/40 shadow-[0_0_18px_rgba(251,113,133,0.12)] light:shadow-none',
+  nivo: 'border-amber-500/40 shadow-[0_0_18px_rgba(251,191,36,0.12)] light:shadow-none',
   neutral: 'border-slate-800/80 light:border-slate-200',
 }
 

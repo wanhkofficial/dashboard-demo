@@ -32,13 +32,9 @@ import {
   Brush,
   ReferenceLine,
 } from 'recharts'
+import { useLiveData } from '../../data/LiveDataContext'
 import {
-  monthlySales,
-  categorySales,
-  funnelPie,
-  channelScatter,
   trafficSources,
-  kpiMetrics,
   radarScores,
   treemapFlat,
   radialBarData,
@@ -69,6 +65,7 @@ const tooltipStyle = {
 }
 
 export function RechartsKpis() {
+  const { kpiMetrics } = useLiveData()
   return (
     <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
       {kpiMetrics.map((kpi) => {
@@ -122,6 +119,8 @@ export function RechartsKpis() {
 }
 
 export function RechartsLine() {
+  const { data } = useLiveData()
+  const { monthlySales } = data
   return (
     <ChartPanel
       title="Revenue & Profit (Line + dots)"
@@ -166,6 +165,8 @@ export function RechartsLine() {
 }
 
 export function RechartsLineBrush() {
+  const { data } = useLiveData()
+  const { monthlySales } = data
   return (
     <ChartPanel
       title="Revenue (Line + Brush zoom/pan)"
@@ -195,6 +196,8 @@ export function RechartsLineBrush() {
 }
 
 export function RechartsArea() {
+  const { data } = useLiveData()
+  const { monthlySales } = data
   return (
     <ChartPanel title="Visitors (Area)" library={meta.name} note="Orange→violet gradient" accent="recharts">
       <ResponsiveContainer width="100%" height={260}>
@@ -225,6 +228,8 @@ export function RechartsArea() {
 }
 
 export function RechartsStackedBar() {
+  const { data } = useLiveData()
+  const { categorySales } = data
   return (
     <ChartPanel title="Category Mix (Stacked Bar)" library={meta.name} note={meta.note} accent="recharts">
       <ResponsiveContainer width="100%" height={260}>
@@ -250,6 +255,8 @@ export function RechartsStackedBar() {
 }
 
 export function RechartsGroupedBar() {
+  const { data } = useLiveData()
+  const { categorySales } = data
   return (
     <ChartPanel title="Category Mix (Grouped Bar)" library={meta.name} note="Side-by-side bars" accent="recharts">
       <ResponsiveContainer width="100%" height={260}>
@@ -269,6 +276,8 @@ export function RechartsGroupedBar() {
 }
 
 export function RechartsDonut() {
+  const { data } = useLiveData()
+  const { funnelPie } = data
   return (
     <ChartPanel title="Conversion Funnel (Donut)" library={meta.name} note={meta.note} accent="recharts">
       <ResponsiveContainer width="100%" height={280}>
@@ -296,6 +305,8 @@ export function RechartsDonut() {
 }
 
 export function RechartsPie() {
+  const { data } = useLiveData()
+  const { funnelPie } = data
   return (
     <ChartPanel title="Conversion Share (Pie)" library={meta.name} note="Full pie (no hole)" accent="recharts">
       <ResponsiveContainer width="100%" height={280}>
@@ -322,6 +333,8 @@ export function RechartsPie() {
 }
 
 export function RechartsScatter() {
+  const { data } = useLiveData()
+  const { channelScatter } = data
   const groups = ['Search', 'Social', 'Email', 'Display'] as const
   return (
     <ChartPanel title="Spend vs Conversions (Scatter)" library={meta.name} note={meta.note} accent="recharts">
@@ -462,6 +475,8 @@ export function RechartsTreemap() {
 }
 
 export function RechartsFunnel() {
+  const { data } = useLiveData()
+  const { funnelPie } = data
   return (
     <ChartPanel title="Sales Funnel" library={meta.name} note="Library-specific · FunnelChart" accent="recharts">
       <ResponsiveContainer width="100%" height={280}>

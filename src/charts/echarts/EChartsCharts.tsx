@@ -1,13 +1,9 @@
 import { useMemo } from 'react'
 import ReactECharts from 'echarts-for-react'
 import { useTheme } from '../../theme/ThemeContext'
+import { useLiveData } from '../../data/LiveDataContext'
 import {
-  monthlySales,
-  categorySales,
-  funnelPie,
-  channelScatter,
   trafficSources,
-  kpiMetrics,
   radarScores,
   heatmapDays,
   heatmapRegions,
@@ -70,6 +66,8 @@ function useEchartsUi() {
 
 export function EChartsKpis() {
   const ui = useEchartsUi()
+  const { data, kpiMetrics } = useLiveData()
+  const { monthlySales } = data
   return (
     <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
       {kpiMetrics.map((kpi) => {
@@ -147,6 +145,8 @@ export function EChartsKpis() {
 /** Main line with dataZoom + toolbox */
 export function EChartsLine() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { monthlySales } = data
   const option = {
     ...glowBg,
     color: ECHARTS_SERIES,
@@ -212,6 +212,8 @@ export function EChartsLine() {
 
 export function EChartsArea() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { monthlySales } = data
   const option = {
     ...glowBg,
     color: [ECHARTS_PALETTE.cyan],
@@ -256,6 +258,8 @@ export function EChartsArea() {
 
 export function EChartsStackedBar() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { categorySales } = data
   const option = {
     ...glowBg,
     color: [ECHARTS_PALETTE.navy, ECHARTS_PALETTE.cyan, ECHARTS_PALETTE.glow],
@@ -285,6 +289,8 @@ export function EChartsStackedBar() {
 
 export function EChartsGroupedBar() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { categorySales } = data
   const option = {
     ...glowBg,
     color: [ECHARTS_PALETTE.blue, ECHARTS_PALETTE.amber, ECHARTS_PALETTE.violet],
@@ -308,6 +314,8 @@ export function EChartsGroupedBar() {
 
 export function EChartsDonut() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { funnelPie } = data
   const option = {
     ...glowBg,
     color: ECHARTS_SERIES,
@@ -341,6 +349,8 @@ export function EChartsDonut() {
 /** Nightingale / rose pie */
 export function EChartsNightingale() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { funnelPie } = data
   const option = {
     ...glowBg,
     color: ECHARTS_SERIES,
@@ -379,6 +389,8 @@ export function EChartsNightingale() {
 
 export function EChartsScatter() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { channelScatter } = data
   const groups = ['Search', 'Social', 'Email', 'Display']
   const option = {
     ...glowBg,
@@ -579,6 +591,8 @@ export function EChartsGauge() {
 
 export function EChartsFunnel() {
   const ui = useEchartsUi()
+  const { data } = useLiveData()
+  const { funnelPie } = data
   const option = {
     ...glowBg,
     color: ECHARTS_SERIES,
