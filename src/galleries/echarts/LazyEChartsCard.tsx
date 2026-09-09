@@ -36,24 +36,24 @@ export function LazyEChartsCard({ example }: Props) {
   return (
     <div ref={ref} className="min-h-[340px]">
       {skipped ? (
-        <div className="flex h-full min-h-[340px] flex-col rounded-2xl border border-amber-500/30 bg-amber-950/20 p-5">
+        <div className="flex h-full min-h-[340px] flex-col rounded-2xl border border-amber-500/30 bg-amber-950/20 p-5 light:border-amber-300 light:bg-amber-50">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-400/80">
             {example.category} · skip
           </p>
-          <h3 className="mt-2 text-base font-semibold text-slate-100">{example.title}</h3>
+          <h3 className="mt-2 text-base font-semibold text-slate-100 light:text-slate-900">{example.title}</h3>
           <p className="mt-1 font-mono text-[11px] text-slate-500">{example.file}</p>
-          <p className="mt-4 text-sm text-amber-100/80">{example.skipReason}</p>
+          <p className="mt-4 text-sm text-amber-100/80 light:text-amber-800">{example.skipReason}</p>
         </div>
       ) : active ? (
         <EChartsExampleViewer example={example} />
       ) : (
-        <div className="flex h-full min-h-[340px] flex-col justify-end rounded-2xl border border-slate-800 bg-slate-950/60 p-5">
+        <div className="flex h-full min-h-[340px] flex-col justify-end rounded-2xl border border-slate-800 bg-slate-950/60 p-5 light:border-slate-200 light:bg-white/80">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-sky-400/70">
             {example.category}
           </p>
-          <h3 className="mt-2 text-base font-semibold text-slate-100">{example.title}</h3>
+          <h3 className="mt-2 text-base font-semibold text-slate-100 light:text-slate-900">{example.title}</h3>
           <p className="mt-1 font-mono text-[11px] text-slate-500">{example.file}</p>
-          <p className="mt-6 text-xs text-slate-600">Scroll into view to load chart…</p>
+          <p className="mt-6 text-xs text-slate-600 light:text-slate-500">Scroll into view to load chart…</p>
         </div>
       )}
     </div>

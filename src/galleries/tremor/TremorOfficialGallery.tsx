@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { useTheme } from '../../theme/ThemeContext'
 import {
   AreaChart,
   BarChart,
@@ -62,8 +63,8 @@ function Panel({
   children: ReactNode
 }) {
   return (
-    <Card className="bg-slate-950/80 ring-1 ring-slate-800">
-      <Title className="text-slate-100">{title}</Title>
+    <Card className="bg-slate-950/80 ring-1 ring-slate-800 light:bg-white light:ring-slate-200">
+      <Title className="text-slate-100 light:text-slate-900">{title}</Title>
       {note && <Text className="mt-1 text-slate-500">{note}</Text>}
       <div className="mt-4">{children}</div>
     </Card>
@@ -71,11 +72,12 @@ function Panel({
 }
 
 export function TremorOfficialGallery() {
+  const { isDark } = useTheme()
   return (
-    <div className="dark space-y-8">
+    <div className={`${isDark ? 'dark' : ''} space-y-8`}>
       <FingerprintBanner library="tremor" />
-      <div className="rounded-2xl border border-emerald-500/25 bg-slate-950/60 px-4 py-4 text-sm text-slate-400">
-        <p className="font-medium text-emerald-100">
+      <div className="rounded-2xl border border-emerald-500/25 bg-slate-950/60 px-4 py-4 text-sm text-slate-400 light:border-emerald-200 light:bg-white/80 light:text-slate-600">
+        <p className="font-medium text-emerald-100 light:text-emerald-800">
           Tremor visualization surface — complete for @tremor/react 3.18.x
         </p>
         <p className="mt-1 text-xs leading-relaxed">
@@ -230,7 +232,7 @@ export function TremorOfficialGallery() {
           {kpiMetrics.map((kpi) => {
             const spark = kpi.spark.map((v, i) => ({ i: String(i), v }))
             return (
-              <Card key={kpi.label} className="bg-slate-950/80 ring-1 ring-slate-800">
+              <Card key={kpi.label} className="bg-slate-950/80 ring-1 ring-slate-800 light:bg-white light:ring-slate-200">
                 <Text>{kpi.label}</Text>
                 <Metric className="text-slate-50">{kpi.value}</Metric>
                 <div className="mt-3 space-y-2">

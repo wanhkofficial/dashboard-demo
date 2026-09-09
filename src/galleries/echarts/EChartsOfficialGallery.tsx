@@ -54,8 +54,8 @@ export function EChartsOfficialGallery() {
     <div className="space-y-5">
       <FingerprintBanner library="echarts" />
 
-      <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 px-4 py-4 text-sm text-slate-400">
-        <p className="font-medium text-slate-100">ECharts Official Gallery — all on one page</p>
+      <div className="rounded-2xl border border-slate-800/80 bg-slate-950/60 px-4 py-4 text-sm text-slate-400 light:border-slate-200 light:bg-white/80 light:text-slate-600">
+        <p className="font-medium text-slate-100 light:text-slate-900">ECharts Official Gallery — all on one page</p>
         <p className="mt-1 text-xs leading-relaxed">
           Every official example is laid out in a scrollable grid on this page (no popup, no
           side-panel pick). Charts <span className="text-slate-200">lazy-load as you scroll</span>{' '}
@@ -63,7 +63,7 @@ export function EChartsOfficialGallery() {
           {manifest ? (
             <>
               {' '}
-              — <span className="text-slate-200">{manifest.count}</span> examples
+              — <span className="text-slate-200 light:text-slate-800">{manifest.count}</span> examples
               {skipCount > 0 && (
                 <>
                   , <span className="text-amber-300">{skipCount}</span> skip cards (maps / bmap)
@@ -77,13 +77,13 @@ export function EChartsOfficialGallery() {
         </p>
       </div>
 
-      <div className="sticky top-0 z-10 -mx-1 flex flex-col gap-3 rounded-2xl border border-slate-800/80 bg-[#0b1220]/95 px-3 py-3 backdrop-blur lg:flex-row lg:items-center">
+      <div className="sticky top-0 z-10 -mx-1 flex flex-col gap-3 rounded-2xl border border-slate-800/80 bg-[#0b1220]/95 px-3 py-3 backdrop-blur light:border-slate-200 light:bg-white/95 lg:flex-row lg:items-center">
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search title, file, category…"
-          className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-2.5 text-sm text-slate-100 outline-none ring-sky-500/40 placeholder:text-slate-600 focus:ring-2 lg:max-w-md"
+          className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-2.5 text-sm text-slate-100 outline-none ring-sky-500/40 placeholder:text-slate-600 focus:ring-2 light:border-slate-300 light:bg-white light:text-slate-900 light:placeholder:text-slate-400 lg:max-w-md"
         />
         <div className="flex flex-wrap gap-1.5">
           {categories.map((c) => (
@@ -94,7 +94,7 @@ export function EChartsOfficialGallery() {
               className={`rounded-lg px-2.5 py-1 text-xs font-medium capitalize transition ${
                 category === c
                   ? 'bg-sky-600 text-white'
-                  : 'border border-slate-800 bg-slate-950 text-slate-400 hover:border-slate-600'
+                  : 'border border-slate-800 bg-slate-950 text-slate-400 hover:border-slate-600 light:border-slate-200 light:bg-white light:text-slate-600 light:hover:border-slate-400'
               }`}
             >
               {c}

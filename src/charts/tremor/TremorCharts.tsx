@@ -45,12 +45,12 @@ export function TremorKpis() {
           key={kpi.label}
           decoration="top"
           decorationColor={kpi.positive ? 'emerald' : 'rose'}
-          className="bg-slate-950/80 ring-1 ring-cyan-800/40"
+          className="bg-slate-950/80 ring-1 ring-cyan-800/40 light:bg-white light:ring-cyan-200"
         >
           <Flex alignItems="start">
             <div>
               <Text>{kpi.label}</Text>
-              <Metric className="text-slate-50">{kpi.value}</Metric>
+              <Metric className="text-slate-50 light:text-slate-900">{kpi.value}</Metric>
             </div>
             <BadgeDelta deltaType={kpi.positive ? 'moderateIncrease' : 'moderateDecrease'}>
               {kpi.delta}

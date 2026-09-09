@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import * as echarts from 'echarts'
 import type { EChartsExampleMeta } from './types'
 import { runOfficialExample } from './runOfficialExample'
+import { useTheme } from '../../theme/ThemeContext'
 
 type Props = {
   example: EChartsExampleMeta
@@ -11,6 +12,7 @@ type Props = {
 
 export function EChartsExampleViewer({ example, className = '' }: Props) {
   const hostRef = useRef<HTMLDivElement>(null)
+  const { theme } = useTheme()
   const [status, setStatus] = useState<'loading' | 'ready' | 'error' | 'skipped'>('loading')
   const [message, setMessage] = useState<string>('')
 
@@ -38,7 +40,7 @@ export function EChartsExampleViewer({ example, className = '' }: Props) {
         const el = hostRef.current
         if (!el) return
 
-        chart = echarts.init(el, 'dark', { renderer: 'canvas' })
+        chart = echarts.init(el, theme === 'dark' ? 'dark' : undefined, { renderer: 'canvas' })
         ro = new ResizeObserver(() => chart?.resize())
         ro.observe(el)
 
@@ -88,15 +90,15 @@ export function EChartsExampleViewer({ example, className = '' }: Props) {
       ro?.disconnect()
       chart?.dispose()
     }
-  }, [example])
+  }, [example, theme])
 
   return (
-    <div className={`flex flex-col overflow-hidden rounded-2xl border border-slate-700 bg-slate-950 ${className}`}>
-      <header className="border-b border-slate-800 px-5 py-4">
+    <div className={`flex flex-col overflow-hidden rounded-2xl border border-slate-700 bg-slate-950 light:border-slate-200 light:bg-white ${className}`}>
+      <header className="border-b border-slate-800 px-5 py-4 light:border-slate-200">
         <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-sky-400/80">
           {example.category} · {example.file}
         </p>
-        <h2 className="mt-1 text-lg font-semibold text-white">{example.title}</h2>
+        <h2 className="mt-1 text-lg font-semibold text-white light:text-slate-900">{example.title}</h2>
         <p className="mt-1 text-xs text-slate-500">
           {status === 'loading' && 'Fetching & evaluating official example…'}
           {status === 'ready' && message}
@@ -105,7 +107,7 @@ export function EChartsExampleViewer({ example, className = '' }: Props) {
         </p>
       </header>
 
-      <div className="relative min-h-[320px] flex-1 bg-[#0b1220]">
+      <div className="relative min-h-[320px] flex-1 bg-[#0b1220] light:bg-slate-50">
         {(status === 'error' || status === 'skipped') && (
           <div className="absolute inset-0 z-10 flex items-center justify-center p-8">
             <div className="max-w-lg rounded-xl border border-amber-500/40 bg-amber-950/40 px-5 py-4 text-sm text-amber-100">

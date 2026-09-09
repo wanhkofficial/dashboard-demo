@@ -144,8 +144,8 @@ export function RechartsOfficialGallery() {
   return (
     <div className="space-y-8">
       <FingerprintBanner library="recharts" />
-      <div className="rounded-2xl border border-violet-500/20 border-dashed bg-slate-950/60 px-4 py-4 text-sm text-slate-400">
-        <p className="font-medium text-violet-100">
+      <div className="rounded-2xl border border-violet-500/20 border-dashed bg-slate-950/60 px-4 py-4 text-sm text-slate-400 light:border-violet-200 light:bg-white/80 light:text-slate-600">
+        <p className="font-medium text-violet-100 light:text-violet-800">
           Recharts official chart components — complete set for this package version
         </p>
         <p className="mt-1 text-xs leading-relaxed">
